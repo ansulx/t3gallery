@@ -13,26 +13,13 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-function TopNav() {
-  return (
-    <nav className="bg-gray-800 text-white flex w-full items center justify-between border -b p-4">
-      <div>Gallery</div>
-
-      <div>Sign In</div> 
-    </nav>
-  );
-}
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`font-sans ${inter.variable} flex flex-col gap-4`}>
-        <TopNav />
-        {children}</body>
-    </html>
+    
+      <div><div className="w-full">Second Layout</div>{children}</div>
   );
 }
